@@ -2,18 +2,32 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.spinny-spinny {
+  height: auto;
   pointer-events: none;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 30s linear;
+  .spinny-spinny {
+    animation: App-logo-spin infinite 2s linear;
   }
 }
+
+/* .spinny-bg {
+  z-index: 1;
+  height: 100vh;
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .spinny-bg {
+    animation: App-logo-spin infinite 2s linear;
+  }
+} */
 
 .App-header {
   background-color: #282c34;
