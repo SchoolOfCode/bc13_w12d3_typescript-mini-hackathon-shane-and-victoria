@@ -24,10 +24,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* age goes in here */}
-        {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJIoHv-y7oGHZWf0PGQd4HobY_6hEwfxDdaQ&usqp=CAU" className="spinny-bg" alt="logo" /> */}
-
-        {/* age displays here */}
 
         {age > 0 && <h1 className="spinny-spinny">{age}</h1>}
 
@@ -41,6 +37,10 @@ function App() {
       
         </form>
         <ImageDisplay age={age} />
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJIoHv-y7oGHZWf0PGQd4HobY_6hEwfxDdaQ&usqp=CAU" className="spinny-bg" alt="logo" />
+
+      
       </header>
     </div>
   );

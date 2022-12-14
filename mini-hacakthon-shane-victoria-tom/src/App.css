@@ -7,6 +7,8 @@
   pointer-events: none;
   margin: 0;
   padding: 0;
+  z-index: 2;
+  position: relative;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,20 +17,29 @@
   }
 }
 
-/* .spinny-bg {
+.spinny-bg {
   z-index: 1;
-  height: 100vh;
+  height: 150vw;
   pointer-events: none;
   margin: 0;
   padding: 0;
+  position: absolute;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .spinny-bg {
     animation: App-logo-spin infinite 2s linear;
   }
-} */
+}
 
+input {
+  z-index: 100;
+  position: relative;
+}
+img{
+  z-index: 100;
+  position: relative;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
