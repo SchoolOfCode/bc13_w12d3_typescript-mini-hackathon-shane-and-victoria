@@ -28,7 +28,13 @@ Voila.
 COMPONENTS:
 
 #APP
-#INPUT (inc button)
+#INPUT - form (so inc button)
 #RESULTS-DISPLAY
-    #IMAGEDISPLAY
-    #AGEDISPLAY
+    #IMAGEDISPLAY (conditionally rendered) - stretch goal
+    #AGEDISPLAY - MVP
+#TOGGLEBUTTON (stetch goal to adjust dark/light mode)
+
+
+PLAN:
+    start just building it in app.js
+    THEN start abstracting out into different components
