@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-size: 120px;
+  color: rgb(239, 18, 84);
+}
+
+.spinny-spinny {
+  height: auto;
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  position: relative;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .spinny-spinny {
+    animation: App-logo-spin infinite 2s linear;
+  }
+}
+
+.spinny-bg {
+  z-index: 1;
+  height: 150vw;
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .spinny-bg {
+    animation: App-logo-spin infinite 2s linear;
+  }
+}
+
+input {
+  z-index: 100;
+  position: relative;
+  margin: 50px;
+}
+img{
+  z-index: 100;
+  position: relative;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
