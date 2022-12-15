@@ -12,34 +12,33 @@ function App() {
     setName(e.target.value);
   }
 
-async function getAge(){
-  console.log("age? yeas");
-  const result = await fetch(`https://api.agify.io/?name=${name}`);
-  const data = await result.json();
-  return data.age;
-}
+  async function getAge(){
+    const result = await fetch(`https://api.agify.io/?name=${name}`);
+    const data = await result.json();
+    return data.age;
+  }
 
-async function getGender(){
-  console.log("Gender? yeas");
-  const result = await fetch(`https://api.genderize.io?name=${name}`);
-  const data = await result.json();
-  console.log("data gender api:", data.gender)
+  async function getGender(){
+    const result = await fetch(`https://api.genderize.io?name=${name}`);
+    const data = await result.json();
+    return data.gender;
   
-  return data.gender;
- 
-}
+  }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    console.log("handlesubmit yeas");
+
     const genderData = await getGender();
-    console.log("gender at handelsubmit:", genderData)
+    console.log("gender: ", genderData);
+
     const ageData = await getAge();
-    console.log("age at handelsubmit:", ageData)
-   setAge(ageData);
-   setGender(genderData);
-   console.log("gender after setstate:", gender)
-   console.log("age after setstate:", age)
+    console.log("age: ", ageData);
+
+    setAge(ageData);
+    console.log("age state: ", age);
+
+    setGender(genderData)
+    console.log("gender state: ", gender);
   }
 
   return (

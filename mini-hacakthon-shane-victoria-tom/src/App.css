@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+h1 {
+  font-size: 120px;
+  color: rgb(239, 18, 84);
+}
+
 .spinny-spinny {
   height: auto;
   pointer-events: none;
@@ -35,6 +40,7 @@
 input {
   z-index: 100;
   position: relative;
+  margin: 50px;
 }
 img{
   z-index: 100;
