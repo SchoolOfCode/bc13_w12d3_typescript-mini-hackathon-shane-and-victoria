@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ImageDisplay } from "./components/ImageDisplay/ImageDisplay";
 
 function App() {
@@ -35,11 +35,16 @@ function App() {
     console.log("age: ", ageData);
 
     setAge(ageData);
-    console.log("age state: ", age);
-
     setGender(genderData)
-    console.log("gender state: ", gender);
   }
+
+  useEffect(() => {
+    console.log("gender state: ", gender);
+  }, [gender]);
+
+  useEffect(() => {
+    console.log("gender state: ", age);
+  }, [age]);
 
   return (
     <div className="App">
